@@ -11,7 +11,7 @@ public class MainTelephone {
         calc[1]=1;
         calc[2]=20;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Сколько минут Вы использовали в этом месяце?: ");
+        System.out.print("Skolko minut vi ispolzovali v etom mesyace?: ");
         calc[3] = scanner.nextInt();
 
         double difference = calc[3] - calc[0];
@@ -19,9 +19,9 @@ public class MainTelephone {
         double overlimit = calc[0] * calc [1] + difference*calc[2];
 
         if (calc[3]>calc[0]){
-            System.out.println("Вы привысили лимит на  " + difference + " минут, по этому плата составит "+overlimit+" грн.");
+            System.out.println("Vi privisili limite na  " + difference + " minut, po etomu plata sostavit "+overlimit+" grn.");
         } else {
-            System.out.println("Плата составит " + inlimit+ " грн, согласно Вашего тарифа");
+            System.out.println("Plata sostavit " + inlimit+ " grn, soglasno vashego tarifa");
         }
 
 

@@ -6,11 +6,11 @@ public class MainMetodi {
         byte[] nums1 = new byte[] {5,6,8};
 
         int summ1 = summArray(nums1);
-        info("Сумма 1: "+summ1);
+        info("Summa 1: "+summ1);
 
         byte[] nums2 = new byte[] {9,6,34,3,3,2,3,4};
         int summ2 = summArray(nums2);
-        info("Сумма 2: "+summ2);
+        info("Summa 2: "+summ2);
 
     }
 
