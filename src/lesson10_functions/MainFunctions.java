@@ -12,13 +12,14 @@ public class MainFunctions {
         short num2 = 8;
         int result2 = summ((short)4,num2);
 
+        info(String.valueOf(result1));
         info(String.valueOf(result2));
 
     }
 
     public static int summ(short a, short b) {
         int res = a + b;
-        String result = "Результат: " + res;
+        String result = "RESULTAT: " + res;
         info(result);
         return res;
     }

@@ -18,11 +18,11 @@ public class MainTelephone {
         double inlimit = calc[0] * calc [1];
         double overlimit = calc[0] * calc [1] + difference*calc[2];
 
-        if (calc[3]>calc[0]){
+              if (calc[3]>calc[0]){
             System.out.println("Vi privisili limite na  " + difference + " minut, po etomu plata sostavit "+overlimit+" grn.");
-        } else {
-            System.out.println("Plata sostavit " + inlimit+ " grn, soglasno vashego tarifa");
-        }
+              } else {
+                    System.out.println("Plata sostavit " + inlimit+ " grn, soglasno vashego tarifa");
+              }
 
 
 
