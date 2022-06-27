@@ -1,18 +1,30 @@
 package Practice;
 
 import java.io.*;
-import java.util.*;
-
-/*В единственной строке входного файла input.txt записаны два натуральных числа через пробел. Значения чисел не превышают 109.
- В единственную строку выходного файла output.txt нужно вывести одно целое число — сумму чисел А и В.
- */
-
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Aplusb {
     public static void main(String[] args) throws IOException {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        int s = 0;
-        String str;
+        ArrayList<Integer> numeric = new ArrayList<>(); // zadaem massiv
+        int s = 0;  // vvodim peremennie
+        String str; // vvodim peremennie
+        FileReader fileInput = new FileReader("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\AplusB\\input.txt"); // poluchaem chisla
+        Scanner sc = new Scanner(fileInput);
+        str = sc.nextLine();
+        StringTokenizer st = new StringTokenizer(str, " "); //vvodim razdelitel v vide probela
+        while(st.hasMoreTokens()){
+            int a = Integer.valueOf(st.nextToken());
+            numeric.add(a); //poluchaem massiv iz file
+        }
+        for (Integer aNumeric : numeric) {
+            s = s + aNumeric; //aNumeric - eto perebiraem massiv, a s = eto summa kajdogo chisla posle probela
+        }
+    FileWriter Answer = new FileWriter("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\AplusB\\output.txt");// Запись числа в файл
+        Answer.write(String.valueOf(s));
+        Answer.close();
+
 
     }
 }

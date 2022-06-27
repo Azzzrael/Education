@@ -7,21 +7,15 @@ public class Main {
         // Коллекции java
         // ЭрейЛист - лучше если нужно внести данные в массив и дальше работать с массивом.
         ArrayList<Integer> numbers = new ArrayList<>();
-        numbers.add(5);
-        numbers.add(50);
-        numbers.add(1,69);
-
-        //     System.out.println("Kol-vo elementov: "+numbers.size());
-
-        System.out.println(numbers.get(1)); // вывести первый элемент
-
-        numbers.remove(1); // удалить выбранный элемент
-        //      numbers.clear(); // очистка всего списка
-
+        int s = 0;
+        numbers.add(10);
+        numbers.add(20);
 
         for(Integer el : numbers) {  // ел - теперь перебирает по елементно вместо вывода i++
+            s +=el;
             System.out.println(el);
         }
+        System.out.println(s);
 
 
     }

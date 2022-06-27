@@ -6,4 +6,9 @@ public class Car extends Transport{
         super(speed, weight, color, coordinate);
     }
 
+    @Override
+    public void moveObject(float speed) {
+        System.out.println("Object dvigaetsya so skorostyu: "+speed);
+    }
+
 }

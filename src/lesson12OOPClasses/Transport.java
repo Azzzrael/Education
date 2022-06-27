@@ -1,6 +1,6 @@
 package lesson12OOPClasses;
 
-public class Transport {
+public abstract class Transport {
 
     // public - доступна отовсюду
     //protected - используеться в наследовании
@@ -22,6 +22,8 @@ public class Transport {
         this.coordinate = coordinate;
    //     System.out.println(this.getValues());
     }
+
+    public abstract void moveObject(float speed);
 
 
     protected void setValues(float speed, int weight, String color, byte[] coordinate){
