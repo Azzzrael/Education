@@ -1,4 +1,4 @@
-package Practice;
+package Practice.AplusB;
 
 import java.io.*;
 import java.util.ArrayList;
