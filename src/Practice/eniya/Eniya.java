@@ -1,4 +1,4 @@
-package Practice.nuts;
+package Practice.eniya;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -7,12 +7,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class nuts {
+public class Eniya {
     public static void main(String[] args) throws IOException {
         ArrayList<Integer> numbers = new ArrayList<>(); // zadaem massiv
-        int s = 0;
         String str; // vvodim peremennie
-        FileReader fileInput = new FileReader("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\nuts\\input.txt"); // poluchaem chisla
+        FileReader fileInput = new FileReader("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\eniya\\input.txt"); // poluchaem chisla
         Scanner sc = new Scanner(fileInput);
         str = sc.nextLine();
         StringTokenizer st = new StringTokenizer(str, " "); //vvodim razdelitel v vide probela
@@ -23,16 +22,10 @@ public class nuts {
             numbers.add(b);
             int c = Integer.valueOf(st.nextToken());
             numbers.add(c);
-            int res = a * b;
-            if (res >= c) {
-                FileWriter Answer = new FileWriter("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\nuts\\output.txt");// Запись числа в файл
-                Answer.write("yes");
-                Answer.close();
-            } else {
-                FileWriter Answer = new FileWriter("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\nuts\\output.txt");// Запись числа в файл
-                Answer.write("no");
-                Answer.close();
-            }
+            int res = a * b * c * 2;
+            FileWriter Answer = new FileWriter("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\eniya\\output.txt");// Запись числа в файл
+            Answer.write(String.valueOf(res));
+            Answer.close();
         }
     }
 }
