@@ -18,6 +18,7 @@ public class basketballvar2 {
         while (sc.hasNextLine()) {
             str = sc.nextLine();
             line.add(str);
+            System.out.println(line);
         }
         for (String i : line) {
             StringTokenizer st = new StringTokenizer(i, " ");
