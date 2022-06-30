@@ -15,12 +15,12 @@ public class strawberry {
         FileReader fileInput = new FileReader("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\strawberry\\input.txt");
         Scanner sc = new Scanner(fileInput);
         str = sc.nextLine();
-            StringTokenizer st = new StringTokenizer(str, " ");
-            while (st.hasMoreTokens()){
+        StringTokenizer st = new StringTokenizer(str, " ");
+        while (st.hasMoreTokens()){
                 nums.add(Integer.valueOf(st.nextToken()));
-                }
-            res = (nums.get(0)+nums.get(1))-nums.get(2);
-            if((nums.get(0)+nums.get(1))-nums.get(2)<0){
+        }
+        res = (nums.get(0)+nums.get(1))-nums.get(2);
+              if((nums.get(0)+nums.get(1))-nums.get(2)<0){
                 FileWriter Answer = new FileWriter("C:\\Users\\Azrael\\IdeaProjects\\itproger\\src\\Practice\\strawberry\\output.txt");
                 Answer.write("Immposible");
                 Answer.close();

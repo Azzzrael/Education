@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class MainTelephone {
     public static void main(String[] args) {
         double [] calc = new double[4];
-        calc[0]=20;
-        calc[1]=1;
-        calc[2]=20;
+        calc[0]=30;
+        calc[1]=2;
+        calc[2]=3;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Skolko minut vi ispolzovali v etom mesyace?: ");
         calc[3] = scanner.nextInt();
