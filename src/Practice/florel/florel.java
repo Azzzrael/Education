@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+//https://github.com/allicen/Java-1000/tree/master/floret
+
 public class florel {
     public static void main(String[] args) throws IOException {
         ArrayList<Integer> days = new ArrayList<>();
